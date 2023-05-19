@@ -164,6 +164,7 @@ header {
   gap: 16.8rem;
   align-items: center;
   padding: 5.38rem 3.22rem 5.38rem 12rem;
+  height: 44.1rem;
 }
 
 :is(
