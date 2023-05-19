@@ -114,7 +114,7 @@ header {
 }
 
 .header__info-content {
-  flex: 0 0 53.6rem;
+  flex: 0 1 53.6rem;
 }
 
 :is(.header__info-content) h1 {
@@ -133,7 +133,7 @@ header {
 }
 
 .header__info-mockup {
-  flex: 0 0 68rem;
+  flex: 0 1 68rem;
 }
 
 .details {
@@ -334,4 +334,124 @@ footer {
 
 .social__icons-wrapper:hover ion-icon {
   color: var(--pink);
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    padding: 2.7rem 1.6rem 3.7rem;
+  }
+
+  :is(.header__navigation) img {
+    width: 10.4rem;
+  }
+
+  .btn--try {
+    width: 9.6rem;
+    height: 2.4rem;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .header__navigation {
+    margin-bottom: 8rem;
+  }
+
+  .header__info {
+    display: flex;
+    align-items: center;
+    gap: 5.4rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  :is(.header__info-content) h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  :is(.header__info-content) p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .header__info-content {
+    flex: 1;
+  }
+
+  .header__info-mockup {
+    flex: 1;
+  }
+
+  .details {
+    padding: 5.9rem 2rem 22.9rem;
+  }
+
+  :is(
+      .details__cards-together,
+      .details__cards-conversations,
+      .details__cards-users
+    ) {
+    padding: 2.4rem 3.9rem 3.3rem;
+    flex-direction: column-reverse;
+    flex: 1;
+    gap: 2.4rem;
+  }
+
+  :is(
+      .details__cards-together,
+      .details__cards-conversations,
+      .details__cards-users
+    )
+    img {
+    width: 25.6rem;
+  }
+
+  .cta-banner {
+    width: 35.2rem;
+    height: 17.6rem;
+  }
+
+  :is(.cta-banner) h2 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .btn--banner {
+    width: 20rem;
+    height: 4rem;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  footer {
+    padding: 14rem 1.6rem 4.6rem;
+    height: auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, minmax(5.6rem, min-content));
+    column-gap: 13rem;
+  }
+
+  :is(footer) img {
+    grid-column: 1 / 2;
+  }
+
+  .contact__details {
+    margin-bottom: 4rem;
+  }
+
+  .footer__navigation-second {
+    margin-bottom: 2.4rem;
+  }
+
+  .social {
+    align-items: center;
+  }
+
+  .social__icons {
+    margin-bottom: 2.4rem;
+  }
 }
