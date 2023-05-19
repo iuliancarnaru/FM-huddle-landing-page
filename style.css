@@ -395,6 +395,7 @@ footer {
     flex-direction: column-reverse;
     flex: 1;
     gap: 2.4rem;
+    text-align: center;
   }
 
   :is(
@@ -404,6 +405,27 @@ footer {
     )
     img {
     width: 25.6rem;
+  }
+
+  :is(
+      .details__cards-together,
+      .details__cards-conversations,
+      .details__cards-users,
+
+    )
+    h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  :is(
+      .details__cards-together,
+      .details__cards-conversations,
+      .details__cards-users
+    )
+    p {
+    font-size: 14px;
+    line-height: 21px;
   }
 
   .cta-banner {
